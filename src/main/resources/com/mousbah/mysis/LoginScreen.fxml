@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+ 
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.mousbah.mysis.login.controller.LoginController">
+  <children>
+    <HBox layoutX="35.0" layoutY="26.0" prefHeight="46.0" prefWidth="388.0">
+      <children>
+        <Label prefHeight="26.0" prefWidth="89.0" text="Username :" />
+        <TextField fx:id="usernameTxt" prefWidth="200.0" />
+      </children>
+    </HBox>
+    <HBox layoutX="35.0" layoutY="72.0" prefHeight="46.0" prefWidth="388.0">
+      <children>
+        <Label prefHeight="26.0" prefWidth="89.0" text="Password :" />
+        <PasswordField fx:id="passwordTxt" prefWidth="200.0" />
+      </children>
+    </HBox>
+    <HBox alignment="TOP_CENTER" layoutX="0.0" layoutY="150.0" prefHeight="30.0" prefWidth="586.0">
+      <children>
+        <Button fx:id="loginBtn" contentDisplay="CENTER" mnemonicParsing="false" text="Login" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.mousbah.mysis.user.controller">
+  <children>
+    <TabPane fx:id="navigationTabPane" layoutX="51.0" layoutY="14.0" prefHeight="333.0" prefWidth="474.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="courseRegistrationTab" text="Course Registration">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="276.0" prefWidth="366.0">
+              <children>
+                <HBox layoutX="14.0" layoutY="25.0" prefHeight="56.0" prefWidth="446.0">
+                  <children>
+                    <Label fx:id="crnLabel" prefWidth="121.0" text="Please enter CRN :" />
+                    <TextField fx:id="crnTxt" prefWidth="200.0" />
+                  </children>
+                </HBox>
+                <HBox layoutX="0.0" layoutY="98.0" prefHeight="204.0" prefWidth="474.0">
+                  <children>
+                    <VBox prefHeight="212.0" prefWidth="474.0">
+                      <children>
+                        <Label fx:id="regsteredCoursesLabel" text="Registered Courses" />
+                        <TableView fx:id="coursesTable" prefHeight="194.0" prefWidth="460.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="CRN" />
+                            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="105.0" text="Course Name" />
+                            <TableColumn prefWidth="75.0" text="Day" />
+                            <TableColumn prefWidth="75.0" text="Time" />
+                          </columns>
+                        </TableView>
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Available Courses">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>
